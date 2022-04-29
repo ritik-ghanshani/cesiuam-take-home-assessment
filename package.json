@@ -1,0 +1,23 @@
+{
+  "name": "cesium-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "db-migrate": "node scripts/db-migrate.js",
+    "db-rollback": "node scripts/db-rollback.js",
+    "db-seed": "node scripts/db-seed.js",
+    "db-create-migration": "knex migrate:make --migrations-directory migrations",
+    "start": "node server.js",
+    "test": "jasmine"
+  },
+  "dependencies": {
+    "knex": "^1.0.7",
+    "pg": "^8.5.1",
+    "restify": "^8.5.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "jasmine": "^4.1.0"
+  }
+}
